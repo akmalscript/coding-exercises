@@ -55,7 +55,7 @@ function isSubArray(ArrA, ArrB) {
     return false;
 }
 
-console.log('Test Case 1:', isSubArray(Test1, Arr1));
-console.log('Test Case 2:', isSubArray(Test2, Arr1));
-console.log('Test Case 3:', isSubArray(Test3, Arr1));
-console.log('Test Case 4:', isSubArray(Test1, Arr2));
+console.log('Test Case 1:', isSubArray(Test1, Arr1));  // true
+console.log('Test Case 2:', isSubArray(Test2, Arr1));  // false
+console.log('Test Case 3:', isSubArray(Test3, Arr1));  // false
+console.log('Test Case 4:', isSubArray(Test1, Arr2));  // false
