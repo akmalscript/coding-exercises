@@ -1,7 +1,8 @@
 """
 Day 1 - 14 Februari 2025
 
-isSubArray: mengecek apakah array B merupakan bagian dari array A.
+isSubArray(arrA, arrB) -> boolean(true/false)
+- mengecek apakah array B merupakan bagian dari array A.
 
 > Testcase (1)
 ArrA = [X, Y, A, B, C]
@@ -20,9 +21,9 @@ ArrA = [X, Y, A, B, C]
 ArrB = [C, B, A]
 Output: False
 
-"""
+> Solusi
+penjelasan: https://drive.google.com/drive/folders/1HnR2bpTvCntrrdaDJtNMqzXI80FXnzrs """
 
-# Solusi
 Test1 = ['X', 'Y', 'A', 'B', 'C']
 Test2 = ['H', 'I', 'J', 'K', 'L']
 Test3 = ['C', 'X', 'Y', 'A', 'B']
