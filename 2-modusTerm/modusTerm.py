@@ -14,8 +14,8 @@ A = [
     [1, 5, 4, 0, -999]
 ]
 > Output:
-modTerm = 2  (indeks kolom(term) terbanyak [dimulai dari 1])
-sumModTerm = 20  (total kemunculan di kolom(term) terbanyak)
+modTerm = 2
+sumModTerm = 20
 > Penjelasan:
 Term/kolom dengan kemunculan terbanyak adalah term/kolom ke-2
 dengan total kemunculan 20 (6+9+5).
