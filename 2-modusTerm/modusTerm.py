@@ -1,9 +1,11 @@
 """
 Day 2 - 15 Februari 2025
 
-ModusTerm(A, modTerm, sumModTerm)
+ModusTerm(matrixA) -> modTerm & sumModTerm
 - menemukan kolom(term) dengan kemunculan terbanyak pada (Document Term) Matrix A
 - abaikan elemen yg bernilai -999
+modTerm: indeks kolom terbanyak [dimulai dari 1]
+sumModTerm: total kemunculan di kolom terbanyak
 
 > Testcase
 A = [
