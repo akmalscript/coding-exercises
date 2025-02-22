@@ -4,17 +4,17 @@
 
 // Solution
 function longestCommonPrefix(strs) {
-    // Jika array kosong
+    // If the input array is empty
     if (!strs.length) return "";
 
-    // Mulai dengan asumsi prefix terpanjang adalah kata pertama
+    // Start with assumption that the longest prefix is ​​the first string
     let prefix = strs[0];
 
-    // Bandingkan prefix ini dengan setiap kata dalam array
+    // Compare this prefix with each word in the array
     for (let i = 1; i < strs.length; i++) {
-        // Potong prefix hingga cocok dengan awal dari string saat ini
+        // Trim the prefix until it matches the start of the current string
         while (strs[i].indexOf(prefix) !== 0) {
-            prefix = prefix.slice(0, -1); // Hapus satu karakter dari belakang
+            prefix = prefix.slice(0, -1); // Remove the last character from the prefix
             if (prefix === "") return "";
         }
     }
@@ -22,7 +22,7 @@ function longestCommonPrefix(strs) {
     return prefix;
 }
 
-// Contoh penggunaan:
+// Example usage:
 const strs1 = ["flower", "flow", "flight"];
 const strs2 = ["dog", "racecar", "car"];
 

@@ -6,24 +6,24 @@
 from typing import List
 
 def longestCommonPrefix(strs: List[str]) -> str:
-    # Jika array kosong
+    # If the input array is empty
     if not strs:
         return ""
 
-    # Mulai dengan asumsi bahwa prefix terpanjang adalah kata pertama
+    # Start with assumption that the longest prefix is ​​the first string
     prefix = strs[0]
 
-    # Bandingkan prefix ini dengan setiap kata dalam array
+    # Compare this prefix with each word in the array
     for string in strs[1:]:
-        # Potong prefix hingga cocok dengan awal dari string saat ini
-        while string[:len(prefix)] != prefix:
+        # Trim the prefix until it matches the start of the current string
+        while string[:len(prefix)] != prefix: #  Remove the last character from the prefix
             prefix = prefix[:-1]
             if not prefix:
                 return ""
 
     return prefix
 
-# Contoh penggunaan:
+# Example usage:
 strs1 = ["flower", "flow", "flight"]
 strs2 = ["dog", "racecar", "car"]
 
