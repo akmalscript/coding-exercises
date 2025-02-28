@@ -3,13 +3,15 @@
 # https://leetcode.com/problems/merge-two-sorted-lists/
 
 # Solution
+from typing import Optional, List
+
 # Definition for a singly linked list node
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val: int = 0, next: Optional['ListNode'] = None) -> None:
         self.val = val  # Node value
         self.next = next  # Pointer to the next node
 
-def mergeTwoLists(list1, list2):
+def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode()  # Create a dummy node to simplify the merging process
     current = dummy  # Pointer to build the merged list
 
@@ -27,7 +29,7 @@ def mergeTwoLists(list1, list2):
     return dummy.next  # Return the merged list starting from the first real node
 
 # Function to convert an array to a linked list
-def arrayToLinkedList(arr):
+def arrayToLinkedList(arr: List[int]) -> Optional[ListNode]:
     if not arr:
         return None  # Return None if the array is empty
     head = ListNode(arr[0])  # Create the head node
@@ -38,7 +40,7 @@ def arrayToLinkedList(arr):
     return head
 
 # Function to convert a linked list to an array
-def linkedListToArray(node):
+def linkedListToArray(node: Optional[ListNode]) -> List[int]:
     result = []
     while node:
         result.append(node.val)  # Append each node's value to the array
