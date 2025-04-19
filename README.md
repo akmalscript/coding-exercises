@@ -4,4 +4,5 @@ This repository is dedicated to storing all my coding practice and challenges to
 ## References
 - Informatics Lecture Quizzes
 - [LeetCode Problemset - Easy](https://leetcode.com/problemset/?difficulty=EASY&page=1)
+- [Solutions for Easy LeetCode Problems by NeetCode](https://www.youtube.com/playlist?list=PLot-Xpze53lfQmTEztbgdp8ALEoydvnRQ)
 - [Coding Challenges by sulhanfuadi](https://github.com/sulhanfuadi/coding-challenges)
