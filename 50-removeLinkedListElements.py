@@ -1,0 +1,5 @@
+# Day 50 - May 18, 2025
+# 203. Remove Linked List Elements
+# https://leetcode.com/problems/remove-linked-list-elements/
+
+# Solution
